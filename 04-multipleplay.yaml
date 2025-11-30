@@ -1,6 +1,6 @@
 - name: PLAY1
   hosts: local
-  connnection: local ## manages its own nodes no need of credentials
+  connection: local ## manages its own nodes no need of credentials
   tasks:
     - name: PLAY1 and Task1
       ansible.builtin.debug:
@@ -8,7 +8,7 @@
 
 - name: PLAY2
   hosts: local
-  connnection: local ## manages its own nodes no need of credentials
+  connection: local ## manages its own nodes no need of credentials
   tasks:
     - name: PLAY2 and Task2
       ansible.builtin.debug:
