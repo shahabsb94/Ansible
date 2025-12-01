@@ -1,7 +1,7 @@
 - name: Print the variables
   hosts: local
   connection: local
-  vars_prompts:
+  vars_prompt:
     - name: Greet
       prompt: Please enter the type of variables
   tasks:
