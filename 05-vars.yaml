@@ -1,0 +1,9 @@
+- name: Print the variables
+  hosts: local
+  connection: local
+  vars:
+    Greet: "Hello form variables"
+  tasks:
+    - name: the variables are
+      ansible.builtin.debug
+        msg: "the variables are {{Greet}}"
