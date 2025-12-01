@@ -4,8 +4,8 @@
   # vars:
   #   Greet: "Hello form Play"
   tasks:
-    vars:
-      Greet: Hello from Task
     - name: the variables are
+      vars:
+      Greet: Hello from Task
       ansible.builtin.debug:
         msg: "{{Greet}}"
