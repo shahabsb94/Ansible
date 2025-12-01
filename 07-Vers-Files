@@ -1,0 +1,9 @@
+- name: Print the variables
+  hosts: local
+  connection: local
+  vars_files:
+    - variables.yaml
+  tasks:
+    - name: the variables are
+      ansible.builtin.debug:
+        msg: "{{Greet}}"
