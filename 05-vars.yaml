@@ -5,5 +5,5 @@
     Greet: "Hello form variables"
   tasks:
     - name: the variables are
-      ansible.builtin.debug
+      ansible.builtin.debug:
         msg: "the variables are {{Greet}}"
