@@ -1,0 +1,10 @@
+- name: Print the variables
+  hosts: local
+  connection: local
+  vars_prompts:
+    - name: Greet
+      Pprompt: Please enter the type of variables
+  tasks:
+    - name: the variables are
+      ansible.builtin.debug:
+        msg: "{{Greet}}"
